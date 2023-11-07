@@ -1,0 +1,70 @@
+body {
+    background-image: linear-gradient(to right, turquoise, purple, pink);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.viagem {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    border: 2px solid turquoise;
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #010101;
+}
+
+#opcoesViagem {
+    text-align: center;
+}
+
+#opcoesViagem a {
+    margin: 10px;
+}
+
+.formulario {
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.mensagem {
+    text-align: center;
+    margin-top: 20px;
+    color: #32A032;
+}
+
+.hidden {
+    display: none;
+}

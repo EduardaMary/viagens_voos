@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Agência de Viagens</h1>
+    <div class="viagem">
+        <h2>Destino: Paris</h2>
+        <img src="paris.jpg">
+        <p>Uma viagem romântica à Cidade Luz!</p>
+        <button onclick="comprarViagem('Paris')">Comprar</button>
+    </div>
+    <div class="viagem">
+        <h2>Destino: Nova York</h2>
+        <img src="nava york.jpg">
+        <p>Explore a cidade que nunca dorme!</p>
+        <button onclick="comprarViagem('Nova York')">Comprar</button>
+    </div>
+    <div id="resposta"></div>
+
+    <h1>Reserva de Viagem</h1>
+    <button id="idaBtn" onclick="selecionarTipoViagem('ida')">Ida</button>
+    <button id="idaVoltaBtn" onclick="selecionarTipoViagem('idaVolta')">Ida e Volta</button>
+    <div id="idaForm" style="display: none;">
+
+        <h2>Ida</h2>
+        <form id="idaForm">
+            <label for="origemIda">Origem:</label>
+            <input type="text" id="origemIda" required placeholder="Digite sua Origem"><br><br>
+            <label for="destinoIda">Destino:</label>
+            <input type="text" id="destinoIda" required placeholder="Digite seu Destino"><br><br>
+            <label for="dataIda">Data de Ida:</label>
+            <input type="date" id="dataIda" required><br><br>
+            <input type="button" value="Reservar" onclick="reservarViagem('ida')">
+        </form>
+    </div>
+    <div id="idaVoltaForm" style="display: none;">
+
+        <h2>Ida e Volta</h2>
+        <form id="idaVoltaForm">
+            <label for="origemIdaVolta">Origem:</label>
+            <input type="text" id="origemIdaVolta" required placeholder="Digite sua Origem"><br><br>
+            <label for="destinoIdaVolta">Destino:</label>
+            <input type="text" id "destinoIdaVolta" required placeholder="Digite seu Destino"><br><br>
+            <label for="dataIda">Data de Ida:</label>
+            <input type="date" id="dataIdaVolta" required><br><br>
+            <label for="dataVolta">Data de Volta:</label>
+            <input type="date" id="dataVolta" required><br><br>
+            <input type="button" value="Reservar" onclick="reservarViagem('idaVolta')">
+        </form>
+    </div>
+    <div id="mensagem"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
